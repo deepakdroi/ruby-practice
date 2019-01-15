@@ -7,11 +7,10 @@
 # Hint: Don't forget about chomp! 'BYE'with an Enter is not the same as 'BYE' without one!
 # Hint 2: Try to think about what parts of your program should happen over and over again. All of those 
 # should be in your while loop.
-puts rand(1..2)
 counter = 0
 response="hello Grandma"
 puts response
-while response != "bye"
+while response != "12345"
 	if response.upcase != response
 		puts "HUH?!  SPEAK UP, SONNY!"
     counter = 0
@@ -24,8 +23,9 @@ while response != "bye"
 	end
  if response.upcase==response && response.upcase == "BYE"
    if counter==2
-    response="bye"
+   response="bye"
    puts response
+   response = "12345"
    else 
     counter=counter+1 
   end
