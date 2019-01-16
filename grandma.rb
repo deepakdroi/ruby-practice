@@ -10,22 +10,23 @@
 counter = 0
 response="hello Grandma"
 puts response
-while response != "12345"
+while response != "12345"# checking aproval of grandma
 	if response.upcase != response
 		puts "HUH?!  SPEAK UP, SONNY!"
     counter = 0
 	end
 	
 	response=gets.chomp
-	if response.upcase == response &&  response.downcase != "bye"
+	if response.upcase == response &&  response.downcase != "bye"#responds only when i yell but
+    #i didnt say bye
 		puts " NO, NOT SINCE " +rand(1930..1950).to_s
      counter = 0
 	end
  if response.upcase==response && response.upcase == "BYE"
-   if counter==2
+   if counter==2#responds only when i yell bye for the 3rd time
    response="bye"
    puts response
-   response = "12345"
+   response = "12345"#giving aproval 
    else 
     counter=counter+1 
   end
